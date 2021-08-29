@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+import random
 import requests
 import json
 import platform
@@ -105,6 +106,9 @@ for job in jobs:
 
         if act_param['type'] == 'tuple':
             param['value'] = tuple(param['value'])
+
+        if act_param['type'] == 'int' and '-' in param['value']:
+            param['value'] = random.randint(*map(int, param['value'].split('-')))
 # ---------------------------------------------------------------------------
 
 setting = get(f'/settings/{setting_ident}')
