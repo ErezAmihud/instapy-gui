@@ -71,6 +71,13 @@ export default class SideBar extends Component {
 								link='/start'
 								level='top'
 							/>
+
+							<MenuItem
+								label='sidebar_periodic_start'
+								icon='fas fa-play'
+								link='/periodic-start'
+								level='top'
+							/>
 						</div>
 					}
 

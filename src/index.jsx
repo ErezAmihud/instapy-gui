@@ -14,7 +14,7 @@ import ReactGA from 'react-ga';
 import { PrivateRoute, NavBar, SideBar, Footer } from 'components';
 import {
 	Configuration, Start, Dashboard,
-	Login, Privacy, Home
+	Login, Privacy, Home, PeriodicStart
 } from 'sites';
 import {
 	readToken, store, connect,
@@ -97,6 +97,10 @@ class App extends Component {
 								<PrivateRoute
 									path='/start'
 									component={ Start }
+								/>
+								<PrivateRoute
+									path='/periodic-start'
+									component={ PeriodicStart }
 								/>
 								<PrivateRoute
 									path='/dashboard'

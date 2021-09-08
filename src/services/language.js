@@ -34,6 +34,7 @@ class Language {
 		sidebar_features: 'FEATURES',
 		sidebar_links: 'LINKS',
 		sidebar_start: 'Start',
+		sidebar_periodic_start: 'Periodic Start',
 		sidebar_other: 'Other',
 		sidebar_dashboard: 'Dashboard',
 		sidebar_settings: 'Settings',
